@@ -1,0 +1,30 @@
+/* info 클래스: 전체 정보 블록 스타일링 */
+.info {
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* 각 항목을 감싸는 .info-item 스타일링 */
+.info-item {
+  display: flex;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* key 클래스: 항목의 키 부분 스타일링 */
+.key {
+  font-weight: bold;
+  margin-right: 1rem;
+  color: #0366d6;
+}
+
+/* value 클래스: 값 부분 스타일링 */
+.value {
+  font-weight: normal;
+  color: #555;
+}

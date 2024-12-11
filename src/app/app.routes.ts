@@ -9,5 +9,10 @@ export const routes: Routes = [
     loadChildren: () => import('./pages/about/about.routes')
       .then(routes => routes.routes)
   },
+  {
+    path: 'growth',
+    loadChildren: () => import('./pages/growth/growth.routes')
+      .then(routes => routes.routes)
+  },
   { path: '**', component: NotFoundComponent }
 ];
