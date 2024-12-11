@@ -1,7 +1,24 @@
 .footer {
   background-color: #f6f8fa;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
+  position: fixed;
+  bottom: 0;
+  // height: 50px;
+  // left: 0;
+  width: 100%;
   text-align: center;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+
+  .container {
+    height: 50px;
+    margin: 10px;
+    .copy {
+      font-size: 10px;
+    }
+    .footer-nav {
+      
+    }
+  }
 
   .footer-link {
     margin: 0 0.5rem;
