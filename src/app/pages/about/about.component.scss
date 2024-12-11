@@ -7,6 +7,11 @@
   justify-content: center;
   padding: 2rem;
   background-color: #f6f8fa;
+
+  max-width: 40vh; /* 최대 너비 */
+  max-height: 50vh; /* 최대 높이 */
+  
+  // width: 100%; // 컨테이너의 너비에 맞춤
 }
 
 /* .buttonArea 스타일 */
@@ -15,6 +20,18 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 2rem;
+}
+
+
+.aboutRoute {
+  width: 100%;
+  max-width: 800px;  /* 최대 너비 지정 */
+  max-height: 100%;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .buttonArea p {
@@ -49,14 +66,4 @@
 .button:focus {
   outline: none;
   border: 2px solid #0366d6; /* 포커스 상태에서 테두리 추가 */
-}
-
-.aboutRoute {
-  width: 100%;
-  max-width: 800px;  /* 최대 너비 지정 */
-  padding: 1rem;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
 }
