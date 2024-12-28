@@ -12,6 +12,69 @@
   // min-width: 100vh;
   // margin: 30px 0 20px 0;
   // width: 100%; // 컨테이너의 너비에 맞춤
+  .titleArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: inline-block;
+    font-size: 1.25rem;
+    // font-weight: bold;
+
+    [class^="title"] {
+      display: inline-block;
+      animation: wave 1s infinite ease-in-out, sparkle 3s infinite alternate;
+      // background: linear-gradient(to left, #000000);
+      background-clip: text;
+      -webkit-background-clip: text;
+      // color: transparent; /* 텍스트 자체는 투명하게 설정 */
+    }
+    // [class^="title"]::after {
+    //   content: ''; /* 가상 요소로 도트를 생성 */
+    //   position: absolute;
+    //   top: -5px; /* 텍스트 위로 적당한 간격 */
+    //   left: 50%;
+    //   width: 12px; /* 도트 크기 */
+    //   height: 12px; /* 도트 크기 */
+    //   background-color: #000000; /* 도트 색상은 텍스트 색상에 맞추기 */
+    //   border-radius: 50%; /* 원형 도트 */
+    //   transform: translateX(-50%); /* 도트를 중앙 정렬 */
+    //   opacity: 0; /* 도트 기본 상태는 보이지 않음 */
+    //   animation: dotWave 1s infinite ease-in-out; /* 도트의 애니메이션 */
+    //   animation-play-state: paused; /* 기본 상태는 애니메이션이 멈춰있음 */
+    // }
+    .title9 { animation-delay: 0.16s; }
+    .title10 { animation-delay: 0.32s; }
+    .title11 { animation-delay: 0.48s; }
+    .title12 { animation-delay: 0.64s; }
+    .title13 { animation-delay: 0.80s; }
+    .title14 { animation-delay: 0.96s; }
+
+    @keyframes wave {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      30% {
+        transform: translateY(-5px);
+      }
+      60% {
+        transform: translateY(0);
+      }
+    }
+    @keyframes dotWave {
+      0%, 100% {
+        transform: translateY(0) scale(1);
+        opacity: 0; /* 도트가 안 보임 */
+      }
+      30% {
+        transform: translateY(-10px) scale(1.2); /* 도트가 튕기면서 커짐 */
+        opacity: 1; /* 도트가 보임 */
+      }
+      60% {
+        transform: translateY(0) scale(1);
+        opacity: 0; /* 도트가 다시 안 보임 */
+      }
+    }
+  }
 }
 
 .growths {

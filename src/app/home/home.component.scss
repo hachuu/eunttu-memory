@@ -1,8 +1,78 @@
-// .home {
-//   display: flex;
-//   justify-content: center;  // 수평 중앙 정렬
-//   align-items: center;      // 수직 중앙 정렬
-//   height: 100vh;            // 화면 전체 높이
-//   width: 100%;              // 전체 너비
-//   background-color: #f0f0f0; // 배경색 (선택 사항)
-// }
+.home {
+    .text {
+        text-align: center;
+    }
+}
+$heart-size: 100px;
+$heart-color: pink;
+.heart {
+    margin: 100px;
+    position: relative;
+    width: $heart-size;
+    height: $heart-size;
+    background-color: $heart-color;
+    transform: rotate(-45deg);
+    animation: sparkle 3s infinite;
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        width: $heart-size;
+        height: $heart-size;
+        background-color: $heart-color;
+        border-radius: 50%;
+    }
+
+    &:before {
+        top: -50%;
+        left: 0;
+    }
+
+    &:after {
+        left: 50%;
+        top: 0;
+    }
+}
+
+.sparkle {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    animation: sparkle 2s infinite ease-in-out;
+    z-index: 100;
+
+    &:nth-child(1) {
+        top: 10%;
+        left: 20%;
+    }
+
+    &:nth-child(2) {
+        top: 40%;
+        left: 120%;
+        animation-delay: 0.5s;
+    }
+
+    &:nth-child(3) {
+        top: 80%;
+        left: 30%;
+        animation-delay: 1s;
+    }
+}
+
+@keyframes sparkle {
+
+    0%,
+    100% {
+        transform: scale(0.5);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}
