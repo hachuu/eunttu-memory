@@ -25,26 +25,8 @@
   </div>
   <div class="growths">
     <!-- <router-outlet></router-outlet> -->
-    <div class="photo-growth">
-      <img src="5months.PNG" alt="5개월 기록" class="photo-item" >
-    </div>
-    <div class="photo-growth">
-      <img src="4months.jpg" alt="4개월 기록" class="photo-item" >
-    </div>
-    <div class="photo-growth">
-      <img src="3months.jpg" alt="3개월 기록" class="photo-item" >
-    </div>
-    <div class="photo-growth">
-      <img src="2months.jpg" alt="2개월 기록" class="photo-item" >
-    </div>
-    <div class="photo-growth">
-      <img src="1months.jpg" alt="1개월 기록" class="photo-item" >
-    </div>
-    <div class="photo-growth">
-      <img src="0months.jpg" alt="0개월 기록" class="photo-item" >
-    </div>
-    <div class="photo-growth">
-      <img src="birth.jpg" alt="탄생 기록" class="photo-item" >
+    <div *ngFor="let month of months" class="photo-growth">
+      <img [src]="month.src" [alt]="month.alt" class="photo-item">
     </div>
     <!-- <div class="photo-growth">
       <img src="eunttu.jpg" alt="Photo 1" class="photo-item" >

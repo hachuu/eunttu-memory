@@ -12,6 +12,16 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class AboutComponent {
   constructor(private el: ElementRef, private renderer: Renderer2) {}
 
+  months = [
+    { src: '6months.jpg', alt: '6개월 기록' },
+    { src: '5months.jpg', alt: '5개월 기록' },
+    { src: '4months.jpg', alt: '4개월 기록' },
+    { src: '3months.jpg', alt: '3개월 기록' },
+    { src: '2months.jpg', alt: '2개월 기록' },
+    { src: '1months.jpg', alt: '1개월 기록' },
+    { src: '0months.jpg', alt: '0개월 기록' }
+  ];
+
   @HostListener('window:scroll', [])
   onScroll(): void {
     const images = this.el.nativeElement.querySelectorAll('img');
