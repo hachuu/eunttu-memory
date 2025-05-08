@@ -13,6 +13,7 @@ export class AboutComponent {
   constructor(private el: ElementRef, private renderer: Renderer2) {}
 
   months = [
+    { src: '8months.jpg', alt: '8개월 기록' },
     { src: '7months.jpg', alt: '7개월 기록' },
     { src: '6months.jpg', alt: '6개월 기록' },
     { src: '5months.jpg', alt: '5개월 기록' },
