@@ -11,9 +11,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class AboutComponent {
 
-  months: { src: string, alt: string }[] = [
-    { src: 'birth.jpg', alt: '출생 기록' }
-  ];
+  months: { src: string, alt: string }[] = [];
 
   birthDate: Date = new Date('2024-08-01'); // 예시 출생일
   monthsSinceBirth: number = Math.floor((new Date().getTime() - this.birthDate.getTime()) / (1000 * 60 * 60 * 24 * 30));
@@ -25,6 +23,7 @@ export class AboutComponent {
         alt: `${month}개월 기록`
       });
     }
+    this.months.push({ src: 'birth.jpg', alt: '출생 기록' });
   }  
 
   @HostListener('window:scroll', [])
