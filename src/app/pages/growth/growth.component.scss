@@ -79,66 +79,28 @@
 
 .growths {
   width: 100%;
-  max-width: 800px;  /* 최대 너비 지정 */
-  max-height: 100%;
-  padding: 0.1rem;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+  position: relative;
 
   .photo-growth {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    // aspect-ratio: 3 / 2; /* 가로 세로 비율 */
-    // width: 200px;
-    padding: 1rem;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 10px;
-  }
-  
-  .photo-item {
-    // width: 150px;
-    height: auto;
-    margin: 10px;
-  }
-  
-  img {
-    /* 컨테이너 크기에 맞게 이미지 조정 */
-    width: 100%;       /* 컨테이너 너비에 맞춤 */
-    height: auto;      /* 비율 유지 */
-    max-width: 100%;   /* 컨테이너를 넘어가지 않도록 제한 */
-    max-height: 100%;  /* 컨테이너 높이를 넘어가지 않도록 제한 */
-    object-fit: cover; /* 이미지가 잘리지 않고 고르게 채워지도록 설정 */
-    display: block;    /* 여백 제거 */
-    margin: 0 auto;    /* 중앙 정렬 (선택 사항) */
-    // transition: transform 0.3s ease, opacity 0.3s ease;
-    transition: transform 0.5s ease, opacity 0.5s ease;
-    opacity: 0.7;
   }
 
-  img.in-view {
+  .photo-item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.05);
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+  }
+
+  .photo-growth.visible .photo-item {
     transform: scale(1);
     opacity: 1;
   }
-  
-  img:not(.in-view) {
-    transform: scale(0.9);
-    opacity: 0.7;
-  }
-  
-  @keyframes imageGrow {
-    from {
-      transform: scale(0.9);
-      opacity: 0.7;
-    }
-    to {
-      transform: scale(1);
-      opacity: 1;
-    }
-  }  
 }

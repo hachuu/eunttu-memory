@@ -25,7 +25,7 @@
   </div>
   <div class="growths">
     <!-- <router-outlet></router-outlet> -->
-    <div *ngFor="let month of months" class="photo-growth">
+    <div *ngFor="let month of months" class="photo-growth" #photoSection>
       <img [src]="month.src" [alt]="month.alt" class="photo-item">
     </div>
     <!-- <div class="photo-growth">
