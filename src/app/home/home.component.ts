@@ -1,16 +1,17 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
 
   features = [
-    { title: 'First Steps', desc: 'Sample description about first steps.' },
-    { title: 'First Word', desc: 'Sample description about first words.' },
-    { title: 'First Birthday', desc: 'Sample description about first birthday.' },
+    { title: 'First Word', desc: 'Dad, Mom, Mamma' },
+    { title: 'First Steps', desc: 'Two footprints' },
+    { title: 'First Birthday', desc: 'Waiting' },
   ];
 }

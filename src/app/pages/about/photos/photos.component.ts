@@ -1,8 +1,9 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-photos',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './photos.component.html',
   styleUrl: './photos.component.scss'
 })
