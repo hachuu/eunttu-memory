@@ -72,3 +72,24 @@
   outline: none;
   border: 2px solid #0366d6; /* 포커스 상태에서 테두리 추가 */
 }
+
+@media (max-width: 500px) {
+  .about {
+    padding: 1rem;
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  .aboutRoute {
+    padding: 0.5rem;
+  }
+
+  .buttonArea p {
+    font-size: 1rem;
+  }
+
+  .button {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+}
