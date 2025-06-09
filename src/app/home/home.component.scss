@@ -107,3 +107,28 @@ $heart-color: pink;
     opacity: 1;
   }
 }
+
+@media (max-width: 500px) {
+  .home {
+    .hero {
+      margin-top: 40px;
+      padding: 1rem 0.5rem;
+    }
+
+    .features {
+      grid-template-columns: 1fr;
+    }
+
+    .heart {
+      margin: 50px;
+      width: 60px;
+      height: 60px;
+
+      &:before,
+      &:after {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+}
