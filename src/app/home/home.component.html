@@ -1,8 +1,19 @@
 <div class="home">
-  <p class="text">은수야 태어나줘서 고마워</p>
-</div>
-<div class="heart">
-  <div class="sparkle"></div>
-  <div class="sparkle"></div>
-  <div class="sparkle"></div>
+  <section class="hero">
+    <h2 class="hero-title">Welcome to Eunttu's Memory</h2>
+    <p class="hero-sub">A place to keep lovely moments.</p>
+  </section>
+
+  <section class="features">
+    <div class="feature" *ngFor="let item of features">
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.desc }}</p>
+    </div>
+  </section>
+
+  <div class="heart">
+    <div class="sparkle"></div>
+    <div class="sparkle"></div>
+    <div class="sparkle"></div>
+  </div>
 </div>

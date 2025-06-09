@@ -1,15 +1,6 @@
 <div class="info">
-  <div class="info-item">
-    <span class="key">age:</span>
-    <span class="value">0 years old
-    </span>
-  </div>
-  <div class="info-item">
-    <span class="key">height:</span>
-    <span class="value">74cm</span>
-  </div>
-  <div class="info-item">
-    <span class="key">weight:</span>
-    <span class="value">9.6kg</span>
+  <div class="info-item" *ngFor="let item of infoItems">
+    <span class="key">{{ item.key }}:</span>
+    <span class="value">{{ item.value }}</span>
   </div>
 </div>
