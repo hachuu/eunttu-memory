@@ -104,3 +104,18 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 600px) {
+  .growths {
+    .photo-growth {
+      height: auto;
+      width: 90vw;
+      aspect-ratio: 1 / 1;
+      margin: 1rem auto;
+    }
+
+    .photo-item {
+      height: 100%;
+    }
+  }
+}
