@@ -1,11 +1,43 @@
-.home {
-    .text {
-        text-align: center;
-    }
-}
 $heart-size: 100px;
 $heart-color: pink;
-.heart {
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .hero {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #f6f8fa;
+    border-radius: 8px;
+    margin-top: 60px;
+    width: 90%;
+    max-width: 800px;
+
+    .hero-title {
+      margin: 0 0 0.5rem;
+    }
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+    width: 90%;
+    max-width: 800px;
+
+    .feature {
+      background-color: white;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+  }
+
+  .heart {
     margin: 100px;
     position: relative;
     width: $heart-size;
@@ -16,26 +48,26 @@ $heart-color: pink;
 
     &:before,
     &:after {
-        content: '';
-        position: absolute;
-        width: $heart-size;
-        height: $heart-size;
-        background-color: $heart-color;
-        border-radius: 50%;
+      content: '';
+      position: absolute;
+      width: $heart-size;
+      height: $heart-size;
+      background-color: $heart-color;
+      border-radius: 50%;
     }
 
     &:before {
-        top: -50%;
-        left: 0;
+      top: -50%;
+      left: 0;
     }
 
     &:after {
-        left: 50%;
-        top: 0;
+      left: 50%;
+      top: 0;
     }
-}
+  }
 
-.sparkle {
+  .sparkle {
     position: absolute;
     width: 5px;
     height: 5px;
@@ -46,33 +78,32 @@ $heart-color: pink;
     z-index: 100;
 
     &:nth-child(1) {
-        top: 10%;
-        left: 20%;
+      top: 10%;
+      left: 20%;
     }
 
     &:nth-child(2) {
-        top: 40%;
-        left: 120%;
-        animation-delay: 0.5s;
+      top: 40%;
+      left: 120%;
+      animation-delay: 0.5s;
     }
 
     &:nth-child(3) {
-        top: 80%;
-        left: 30%;
-        animation-delay: 1s;
+      top: 80%;
+      left: 30%;
+      animation-delay: 1s;
     }
+  }
 }
 
 @keyframes sparkle {
-
-    0%,
-    100% {
-        transform: scale(0.5);
-        opacity: 0.5;
-    }
-
-    50% {
-        transform: scale(1.2);
-        opacity: 1;
-    }
+  0%,
+  100% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
 }

@@ -1,9 +1,7 @@
 .photo-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  // aspect-ratio: 3 / 2; /* 가로 세로 비율 */
-  width: 200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
   padding: 1rem;
   background-color: #f9f9f9;
   border-radius: 8px;
@@ -13,9 +11,8 @@
 }
 
 .photo-item {
-  width: 150px;
+  width: 100%;
   height: auto;
-  margin: 10px;
 }
 
 img {

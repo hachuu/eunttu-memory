@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './photos.component.scss'
 })
 export class PhotosComponent {
-
+  photos = [
+    { src: 'recent.jpg', alt: 'Recent Eunttu' },
+    { src: 'eunttu.jpg', alt: 'Sample image' }
+  ];
 }

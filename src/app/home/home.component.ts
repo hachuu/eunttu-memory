@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  features = [
+    { title: 'First Steps', desc: 'Sample description about first steps.' },
+    { title: 'First Word', desc: 'Sample description about first words.' },
+    { title: 'First Birthday', desc: 'Sample description about first birthday.' },
+  ];
 }
