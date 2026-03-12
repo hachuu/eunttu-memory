@@ -13,6 +13,6 @@ export class HomeComponent {
     { title: 'First Word', desc: 'Dad, Mom, Mamma' },
     { title: 'First Steps', desc: 'Two footprints' },
     { title: 'First Birthday', desc: 'The party was a success' },
-    { title: 'First Word', desc: 'KKAKKA' },
+    { title: 'First Sentence', desc: 'KKAKKA JJiJeoJeo' },
   ];
 }

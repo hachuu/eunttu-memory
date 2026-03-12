@@ -9,13 +9,13 @@ import { Component } from '@angular/core';
 })
 export class DataComponent {
   infoItems = [
-    { key: 'Age', value: '0 years old' },
-    { key: 'Height', value: '74cm' },
-    { key: 'Weight', value: '9.6kg' },
+    { key: 'Age', value: '1 years old' },
+    { key: 'Height', value: '83cm' },
+    { key: 'Weight', value: '11kg' },
     { key: 'Blood Type', value: 'A' },
-    { key: 'Likes', value: 'Mom, Dad, Milk, Playing' },
-    { key: 'Dislikes', value: 'Given and taken away' },
-    { key: 'Hobbies', value: 'Playing with his parents' },
-    { key: 'Skills', value: 'Crawling, Standing, Jumping' }
+    { key: 'Likes', value: 'Mom, Dad, Halmi, Bus, Doll' },
+    { key: 'Dislikes', value: 'Sleep alone' },
+    { key: 'Hobbies', value: 'Playing with his parents, Reading, Dancing' },
+    { key: 'Skills', value: 'Aegyo, Crawling, Jumping' }
   ];
 }
