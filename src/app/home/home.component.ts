@@ -16,6 +16,7 @@ export class HomeComponent {
     { title: 'First Birthday', desc: 'The party was a success' },
     { title: 'First Sentence', desc: 'KKAKKA JJiJeoJeo' },
     { title: 'First Time', desc: 'Riding a bus' },
-    { title: 'First Jump', desc: 'Dancing to the music' }
+    { title: 'First Jump', desc: 'Dancing to the music' },
+    { title: 'First Full Sentence', desc: 'Mom, Where r u?' }
   ];
 }
