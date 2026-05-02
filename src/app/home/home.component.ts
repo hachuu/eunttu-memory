@@ -17,6 +17,7 @@ export class HomeComponent {
     { title: 'First Sentence', desc: 'KKAKKA JJiJeoJeo' },
     { title: 'First Time', desc: 'Riding a bus' },
     { title: 'First Jump', desc: 'Dancing to the music' },
-    { title: 'First Full Sentence', desc: 'Mom, Where r u?' }
+    { title: 'First Full Sentence', desc: 'Mom, Where r u?' },
+    { title: 'First Emotional Expression', desc: 'I Love U'}
   ];
 }
