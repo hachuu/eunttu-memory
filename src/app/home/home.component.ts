@@ -10,6 +10,7 @@ import { Component } from '@angular/core';
 export class HomeComponent {
 
   features = [
+    { title: 'First Name', desc: 'My name, Mom\'s Dad\'s' },
     { title: 'First Word', desc: 'Dad, Mom, Mamma' },
     { title: 'First Words', desc: 'Halmi, Halbi, KKOMO, DDAMCHUN' },
     { title: 'First Steps', desc: 'Two footprints' },
