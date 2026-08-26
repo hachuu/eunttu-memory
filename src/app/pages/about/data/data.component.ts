@@ -9,8 +9,8 @@ import { Component } from '@angular/core';
 })
 export class DataComponent {
   infoItems = [
-    { key: 'Age', value: '1 years old' },
-    { key: 'Height', value: '84cm' },
+    { key: 'Age', value: '2 years old' },
+    { key: 'Height', value: '85cm' },
     { key: 'Weight', value: '11kg' },
     { key: 'Blood Type', value: 'A' },
     { key: 'Likes', value: 'Mom, Dad, Halmi, Bus, Doll' },
